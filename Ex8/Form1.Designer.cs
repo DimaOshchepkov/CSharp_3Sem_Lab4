@@ -65,6 +65,8 @@
             this.NoButton.Text = "Нет";
             this.NoButton.UseVisualStyleBackColor = true;
             this.NoButton.Click += new System.EventHandler(this.NoButton_Click);
+            this.NoButton.Enter += new System.EventHandler(this.NoButton_Enter);
+            this.NoButton.MouseMove += new System.Windows.Forms.MouseEventHandler(this.NoButton_MouseMove);
             // 
             // toolTip1
             // 

@@ -24,6 +24,24 @@ namespace Ex1
                 CalculateButton_Click(sender, e);
         }
 
+        private void ATextBox_TextChanged(object sender, EventArgs e)
+        {
+            FirstRootLabel.Text = "?";
+            SecondRootLabel.Text = "?";
+        }
+
+        private void BTextBox_TextChanged(object sender, EventArgs e)
+        {
+            FirstRootLabel.Text = "?";
+            SecondRootLabel.Text = "?";
+        }
+
+        private void CTextBox_TextChanged(object sender, EventArgs e)
+        {
+            FirstRootLabel.Text = "?";
+            SecondRootLabel.Text = "?";
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -57,14 +75,22 @@ namespace Ex1
             if (a == 0 && b == 0)
             {
                 if (c != 0)
+                {
                     MessageBox.Show("У этого уравнения нет корнней\n");
+                    FirstRootLabel.Text = "-";
+                    SecondRootLabel.Text = "-";
+                }
                 else
+                {
+                    FirstRootLabel.Text = "∞";
+                    SecondRootLabel.Text = "∞";
                     MessageBox.Show("У этого уравнения бесконечно много корней\n");
+                }
 
             }
             else if (a == 0 && b != 0)
             {
-                FirstRootLabel.Text = c.ToString();
+                FirstRootLabel.Text = (-c).ToString();
                 SecondRootLabel.Text = "?";
             }
             else if (a != 0 && discriminant < 0)

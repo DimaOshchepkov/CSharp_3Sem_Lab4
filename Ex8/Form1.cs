@@ -33,5 +33,16 @@ namespace Ex8
         {
             MessageBox.Show("Здорово!");
         }
+
+        private void NoButton_MouseMove(object sender, MouseEventArgs e)
+        {
+            NoButton.Location = new Point(random.Next(0, this.ClientSize.Width - NoButton.Width),
+                                          random.Next(0, this.ClientSize.Height - NoButton.Height));
+        }
+
+        private void NoButton_Enter(object sender, EventArgs e)
+        {
+            YesButton.Focus();
+        }
     }
 }

@@ -115,7 +115,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.splitContainer1);
             this.Name = "TriagleForm";
-            this.Text = "Form2";
+            this.Text = "Треугольник";
             this.Load += new System.EventHandler(this.TriagleForm_Load);
             this.Shown += new System.EventHandler(this.TriagleForm_Shown);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TriagleForm_MouseClick);

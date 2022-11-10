@@ -69,6 +69,7 @@
             this.ATextBox.Size = new System.Drawing.Size(100, 20);
             this.ATextBox.TabIndex = 2;
             this.ATextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ATextBox.TextChanged += new System.EventHandler(this.ATextBox_TextChanged);
             // 
             // BTextBox
             // 
@@ -77,6 +78,7 @@
             this.BTextBox.Size = new System.Drawing.Size(100, 20);
             this.BTextBox.TabIndex = 3;
             this.BTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.BTextBox.TextChanged += new System.EventHandler(this.BTextBox_TextChanged);
             // 
             // CTextBox
             // 
@@ -85,6 +87,7 @@
             this.CTextBox.Size = new System.Drawing.Size(100, 20);
             this.CTextBox.TabIndex = 4;
             this.CTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CTextBox.TextChanged += new System.EventHandler(this.CTextBox_TextChanged);
             // 
             // label3
             // 
